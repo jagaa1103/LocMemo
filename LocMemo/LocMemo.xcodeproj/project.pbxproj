@@ -22,6 +22,9 @@
 		113D86511B886551009A5E94 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86501B886551009A5E94 /* LoginView.swift */; };
 		113D86541B886574009A5E94 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86531B886574009A5E94 /* RegisterView.swift */; };
 		113D86571B886591009A5E94 /* ForgotPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86561B886591009A5E94 /* ForgotPassView.swift */; };
+		113D865A1B88662B009A5E94 /* DbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86591B88662B009A5E94 /* DbService.swift */; };
+		113D865C1B886636009A5E94 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D865B1B886636009A5E94 /* LoginService.swift */; };
+		113D865E1B886675009A5E94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D865D1B886675009A5E94 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		113D86501B886551009A5E94 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		113D86531B886574009A5E94 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		113D86561B886591009A5E94 /* ForgotPassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassView.swift; sourceTree = "<group>"; };
+		113D86591B88662B009A5E94 /* DbService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbService.swift; sourceTree = "<group>"; };
+		113D865B1B886636009A5E94 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		113D865D1B886675009A5E94 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		113D85FF1B883B1F009A5E94 /* LocMemo */ = {
 			isa = PBXGroup;
 			children = (
+				113D86581B886601009A5E94 /* Services */,
 				113D86521B886558009A5E94 /* Views */,
 				113D86021B883B1F009A5E94 /* AppDelegate.swift */,
 				113D86061B883B1F009A5E94 /* Main.storyboard */,
@@ -167,6 +174,16 @@
 				113D86561B886591009A5E94 /* ForgotPassView.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		113D86581B886601009A5E94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				113D86591B88662B009A5E94 /* DbService.swift */,
+				113D865B1B886636009A5E94 /* LoginService.swift */,
+				113D865D1B886675009A5E94 /* Constants.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				113D86511B886551009A5E94 /* LoginView.swift in Sources */,
+				113D865E1B886675009A5E94 /* Constants.swift in Sources */,
+				113D865A1B88662B009A5E94 /* DbService.swift in Sources */,
 				113D86541B886574009A5E94 /* RegisterView.swift in Sources */,
 				113D86571B886591009A5E94 /* ForgotPassView.swift in Sources */,
 				113D86051B883B1F009A5E94 /* MainView.swift in Sources */,
 				113D86031B883B1F009A5E94 /* AppDelegate.swift in Sources */,
+				113D865C1B886636009A5E94 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
