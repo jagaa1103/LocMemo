@@ -13,6 +13,12 @@
 		113D860A1B883B1F009A5E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113D86091B883B1F009A5E94 /* Images.xcassets */; };
 		113D860D1B883B1F009A5E94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113D860B1B883B1F009A5E94 /* LaunchScreen.xib */; };
 		113D86191B883B1F009A5E94 /* LocMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86181B883B1F009A5E94 /* LocMemoTests.swift */; };
+		113D86431B88644C009A5E94 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86421B88644C009A5E94 /* Firebase.framework */; };
+		113D86451B886477009A5E94 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86441B886477009A5E94 /* libicucore.dylib */; };
+		113D86471B886483009A5E94 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86461B886483009A5E94 /* libc++.dylib */; };
+		113D86491B88648A009A5E94 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86481B88648A009A5E94 /* CFNetwork.framework */; };
+		113D864B1B886495009A5E94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D864A1B886495009A5E94 /* Security.framework */; };
+		113D864D1B88649E009A5E94 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D864C1B88649E009A5E94 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		113D86121B883B1F009A5E94 /* LocMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113D86171B883B1F009A5E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113D86181B883B1F009A5E94 /* LocMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocMemoTests.swift; sourceTree = "<group>"; };
+		113D86421B88644C009A5E94 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		113D86441B886477009A5E94 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		113D86461B886483009A5E94 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		113D86481B88648A009A5E94 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		113D864A1B886495009A5E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		113D864C1B88649E009A5E94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113D864D1B88649E009A5E94 /* SystemConfiguration.framework in Frameworks */,
+				113D864B1B886495009A5E94 /* Security.framework in Frameworks */,
+				113D86491B88648A009A5E94 /* CFNetwork.framework in Frameworks */,
+				113D86471B886483009A5E94 /* libc++.dylib in Frameworks */,
+				113D86451B886477009A5E94 /* libicucore.dylib in Frameworks */,
+				113D86431B88644C009A5E94 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,12 @@
 		113D85F41B883B1F009A5E94 = {
 			isa = PBXGroup;
 			children = (
+				113D864C1B88649E009A5E94 /* SystemConfiguration.framework */,
+				113D864A1B886495009A5E94 /* Security.framework */,
+				113D86481B88648A009A5E94 /* CFNetwork.framework */,
+				113D86461B886483009A5E94 /* libc++.dylib */,
+				113D86441B886477009A5E94 /* libicucore.dylib */,
+				113D86411B88641A009A5E94 /* SDKs */,
 				113D85FF1B883B1F009A5E94 /* LocMemo */,
 				113D86151B883B1F009A5E94 /* LocMemoTests */,
 				113D85FE1B883B1F009A5E94 /* Products */,
@@ -110,6 +134,14 @@
 				113D86171B883B1F009A5E94 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		113D86411B88641A009A5E94 /* SDKs */ = {
+			isa = PBXGroup;
+			children = (
+				113D86421B88644C009A5E94 /* Firebase.framework */,
+			);
+			name = SDKs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +372,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LocMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +386,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LocMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +449,7 @@
 				113D861E1B883B1F009A5E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		113D861F1B883B1F009A5E94 /* Build configuration list for PBXNativeTarget "LocMemoTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +458,7 @@
 				113D86211B883B1F009A5E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
