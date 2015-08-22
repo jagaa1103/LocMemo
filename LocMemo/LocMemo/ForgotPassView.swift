@@ -13,4 +13,11 @@ class ForgotPassView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBOutlet weak var emailTextfield: UITextField!
+    
+    @IBAction func sendClicked(sender: AnyObject) {
+        
+        
+    }
 }

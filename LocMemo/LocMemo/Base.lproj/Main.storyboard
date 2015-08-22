@@ -91,14 +91,22 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-MQ-49M">
-                                <rect key="frame" x="189" y="454" width="57" height="30"/>
+                                <rect key="frame" x="189" y="444" width="57" height="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerClicked:" destination="tDp-O5-s78" eventType="touchUpInside" id="NAv-il-XV7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="ozN-oR-R4c" id="DJD-Ho-fy9"/>
+                        <outlet property="passTextfield" destination="2xF-93-dPy" id="86r-0I-Unw"/>
+                        <outlet property="repassTextfield" destination="VJ2-DQ-J1E" id="okA-1U-pwO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9N-kF-t3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,14 +130,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTa-ws-oSo">
-                                <rect key="frame" x="200" y="323" width="34" height="30"/>
+                                <rect key="frame" x="212" y="323" width="34" height="30"/>
                                 <state key="normal" title="send">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendClicked:" destination="0Tt-El-I7O" eventType="touchUpInside" id="auU-Ng-u2y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="mMW-Ko-zCA" id="pYm-61-kUn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryk-2E-ySf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,6 +172,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginClicked:" destination="zuS-FX-Swq" eventType="touchUpInside" id="G3q-T2-vxr"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5My-QZ-zZF">
                                 <rect key="frame" x="60" y="281" width="201" height="30"/>
@@ -174,16 +191,26 @@
                                 <state key="normal" title="Forgot Password">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="forgotpassClicked:" destination="zuS-FX-Swq" eventType="touchUpInside" id="O7H-mK-vPt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45d-VT-1Hc">
                                 <rect key="frame" x="16" y="462" width="57" height="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerClicked:" destination="zuS-FX-Swq" eventType="touchUpInside" id="edc-fd-6WY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="5My-QZ-zZF" id="mWR-b6-s48"/>
+                        <outlet property="passwordTextfield" destination="3b5-Oz-zyK" id="J8X-ix-UnW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7d-az-Bi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
