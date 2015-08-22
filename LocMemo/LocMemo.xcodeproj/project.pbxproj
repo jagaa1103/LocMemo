@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		113D86031B883B1F009A5E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86021B883B1F009A5E94 /* AppDelegate.swift */; };
-		113D86051B883B1F009A5E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86041B883B1F009A5E94 /* ViewController.swift */; };
+		113D86051B883B1F009A5E94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86041B883B1F009A5E94 /* MainView.swift */; };
 		113D86081B883B1F009A5E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113D86061B883B1F009A5E94 /* Main.storyboard */; };
 		113D860A1B883B1F009A5E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113D86091B883B1F009A5E94 /* Images.xcassets */; };
 		113D860D1B883B1F009A5E94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113D860B1B883B1F009A5E94 /* LaunchScreen.xib */; };
 		113D86191B883B1F009A5E94 /* LocMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86181B883B1F009A5E94 /* LocMemoTests.swift */; };
-		113D86431B88644C009A5E94 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86421B88644C009A5E94 /* Firebase.framework */; };
 		113D86451B886477009A5E94 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86441B886477009A5E94 /* libicucore.dylib */; };
 		113D86471B886483009A5E94 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86461B886483009A5E94 /* libc++.dylib */; };
 		113D86491B88648A009A5E94 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D86481B88648A009A5E94 /* CFNetwork.framework */; };
 		113D864B1B886495009A5E94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D864A1B886495009A5E94 /* Security.framework */; };
 		113D864D1B88649E009A5E94 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D864C1B88649E009A5E94 /* SystemConfiguration.framework */; };
+		113D864F1B88651A009A5E94 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113D864E1B88651A009A5E94 /* Firebase.framework */; };
+		113D86511B886551009A5E94 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86501B886551009A5E94 /* LoginView.swift */; };
+		113D86541B886574009A5E94 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86531B886574009A5E94 /* RegisterView.swift */; };
+		113D86571B886591009A5E94 /* ForgotPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86561B886591009A5E94 /* ForgotPassView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,19 +38,22 @@
 		113D85FD1B883B1F009A5E94 /* LocMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113D86011B883B1F009A5E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113D86021B883B1F009A5E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		113D86041B883B1F009A5E94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		113D86041B883B1F009A5E94 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		113D86071B883B1F009A5E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		113D86091B883B1F009A5E94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		113D860C1B883B1F009A5E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		113D86121B883B1F009A5E94 /* LocMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		113D86171B883B1F009A5E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113D86181B883B1F009A5E94 /* LocMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocMemoTests.swift; sourceTree = "<group>"; };
-		113D86421B88644C009A5E94 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		113D86441B886477009A5E94 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		113D86461B886483009A5E94 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		113D86481B88648A009A5E94 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		113D864A1B886495009A5E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		113D864C1B88649E009A5E94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		113D864E1B88651A009A5E94 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = LocMemo/SDKs/Firebase.framework; sourceTree = "<group>"; };
+		113D86501B886551009A5E94 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		113D86531B886574009A5E94 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		113D86561B886591009A5E94 /* ForgotPassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +62,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				113D864D1B88649E009A5E94 /* SystemConfiguration.framework in Frameworks */,
+				113D864F1B88651A009A5E94 /* Firebase.framework in Frameworks */,
 				113D864B1B886495009A5E94 /* Security.framework in Frameworks */,
 				113D86491B88648A009A5E94 /* CFNetwork.framework in Frameworks */,
 				113D86471B886483009A5E94 /* libc++.dylib in Frameworks */,
 				113D86451B886477009A5E94 /* libicucore.dylib in Frameworks */,
-				113D86431B88644C009A5E94 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +83,6 @@
 		113D85F41B883B1F009A5E94 = {
 			isa = PBXGroup;
 			children = (
-				113D864C1B88649E009A5E94 /* SystemConfiguration.framework */,
-				113D864A1B886495009A5E94 /* Security.framework */,
-				113D86481B88648A009A5E94 /* CFNetwork.framework */,
-				113D86461B886483009A5E94 /* libc++.dylib */,
-				113D86441B886477009A5E94 /* libicucore.dylib */,
 				113D86411B88641A009A5E94 /* SDKs */,
 				113D85FF1B883B1F009A5E94 /* LocMemo */,
 				113D86151B883B1F009A5E94 /* LocMemoTests */,
@@ -101,8 +102,8 @@
 		113D85FF1B883B1F009A5E94 /* LocMemo */ = {
 			isa = PBXGroup;
 			children = (
+				113D86521B886558009A5E94 /* Views */,
 				113D86021B883B1F009A5E94 /* AppDelegate.swift */,
-				113D86041B883B1F009A5E94 /* ViewController.swift */,
 				113D86061B883B1F009A5E94 /* Main.storyboard */,
 				113D86091B883B1F009A5E94 /* Images.xcassets */,
 				113D860B1B883B1F009A5E94 /* LaunchScreen.xib */,
@@ -139,9 +140,33 @@
 		113D86411B88641A009A5E94 /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
-				113D86421B88644C009A5E94 /* Firebase.framework */,
+				113D864C1B88649E009A5E94 /* SystemConfiguration.framework */,
+				113D864A1B886495009A5E94 /* Security.framework */,
+				113D86481B88648A009A5E94 /* CFNetwork.framework */,
+				113D86461B886483009A5E94 /* libc++.dylib */,
+				113D86441B886477009A5E94 /* libicucore.dylib */,
+				113D864E1B88651A009A5E94 /* Firebase.framework */,
 			);
 			name = SDKs;
+			sourceTree = "<group>";
+		};
+		113D86521B886558009A5E94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				113D86551B88657B009A5E94 /* Login */,
+				113D86041B883B1F009A5E94 /* MainView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		113D86551B88657B009A5E94 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				113D86501B886551009A5E94 /* LoginView.swift */,
+				113D86531B886574009A5E94 /* RegisterView.swift */,
+				113D86561B886591009A5E94 /* ForgotPassView.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113D86051B883B1F009A5E94 /* ViewController.swift in Sources */,
+				113D86511B886551009A5E94 /* LoginView.swift in Sources */,
+				113D86541B886574009A5E94 /* RegisterView.swift in Sources */,
+				113D86571B886591009A5E94 /* ForgotPassView.swift in Sources */,
+				113D86051B883B1F009A5E94 /* MainView.swift in Sources */,
 				113D86031B883B1F009A5E94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +403,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LocMemo/SDKs",
 				);
 				INFOPLIST_FILE = LocMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -389,6 +418,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LocMemo/SDKs",
 				);
 				INFOPLIST_FILE = LocMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
