@@ -26,6 +26,7 @@
 		113D865C1B886636009A5E94 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D865B1B886636009A5E94 /* LoginService.swift */; };
 		113D865E1B886675009A5E94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D865D1B886675009A5E94 /* Constants.swift */; };
 		113D86601B886C1D009A5E94 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D865F1B886C1D009A5E94 /* StartView.swift */; };
+		113D86621B887907009A5E94 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86611B887907009A5E94 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		113D865B1B886636009A5E94 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		113D865D1B886675009A5E94 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		113D865F1B886C1D009A5E94 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		113D86611B887907009A5E94 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				113D86591B88662B009A5E94 /* DbService.swift */,
 				113D865B1B886636009A5E94 /* LoginService.swift */,
 				113D865D1B886675009A5E94 /* Constants.swift */,
+				113D86611B887907009A5E94 /* LocationService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				113D86601B886C1D009A5E94 /* StartView.swift in Sources */,
 				113D86511B886551009A5E94 /* LoginView.swift in Sources */,
+				113D86621B887907009A5E94 /* LocationService.swift in Sources */,
 				113D865E1B886675009A5E94 /* Constants.swift in Sources */,
 				113D865A1B88662B009A5E94 /* DbService.swift in Sources */,
 				113D86541B886574009A5E94 /* RegisterView.swift in Sources */,
