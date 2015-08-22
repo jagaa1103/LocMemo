@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0014779A-854F-48A4-924D-0A87F01FB0F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E83FB366A418F074CE05871C217B7A395E9BE6E8</key>
+		<string>https://github.com/jagaa1103/LocMemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LocMemo/LocMemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E83FB366A418F074CE05871C217B7A395E9BE6E8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jagaa1103/LocMemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E83FB366A418F074CE05871C217B7A395E9BE6E8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E83FB366A418F074CE05871C217B7A395E9BE6E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LocMemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
