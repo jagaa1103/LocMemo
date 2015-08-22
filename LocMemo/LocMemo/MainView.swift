@@ -20,6 +20,14 @@ class MainView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func logoutClicked(sender: AnyObject) {
+        LoginService.sharedInstance.logoutUser(){
+            res in
+            if(res == true){
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        }
+    }
 
 }
 
