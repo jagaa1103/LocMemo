@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113D86031B883B1F009A5E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86021B883B1F009A5E94 /* AppDelegate.swift */; };
+		113D86051B883B1F009A5E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86041B883B1F009A5E94 /* ViewController.swift */; };
+		113D86081B883B1F009A5E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113D86061B883B1F009A5E94 /* Main.storyboard */; };
+		113D860A1B883B1F009A5E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113D86091B883B1F009A5E94 /* Images.xcassets */; };
+		113D860D1B883B1F009A5E94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 113D860B1B883B1F009A5E94 /* LaunchScreen.xib */; };
+		113D86191B883B1F009A5E94 /* LocMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86181B883B1F009A5E94 /* LocMemoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		113D86131B883B1F009A5E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 113D85F51B883B1F009A5E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 113D85FC1B883B1F009A5E94;
+			remoteInfo = LocMemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		113D85FD1B883B1F009A5E94 /* LocMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		113D86011B883B1F009A5E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113D86021B883B1F009A5E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		113D86041B883B1F009A5E94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		113D86071B883B1F009A5E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		113D86091B883B1F009A5E94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		113D860C1B883B1F009A5E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		113D86121B883B1F009A5E94 /* LocMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		113D86171B883B1F009A5E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113D86181B883B1F009A5E94 /* LocMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocMemoTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		113D85FA1B883B1F009A5E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113D860F1B883B1F009A5E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		113D85F41B883B1F009A5E94 = {
+			isa = PBXGroup;
+			children = (
+				113D85FF1B883B1F009A5E94 /* LocMemo */,
+				113D86151B883B1F009A5E94 /* LocMemoTests */,
+				113D85FE1B883B1F009A5E94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		113D85FE1B883B1F009A5E94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				113D85FD1B883B1F009A5E94 /* LocMemo.app */,
+				113D86121B883B1F009A5E94 /* LocMemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		113D85FF1B883B1F009A5E94 /* LocMemo */ = {
+			isa = PBXGroup;
+			children = (
+				113D86021B883B1F009A5E94 /* AppDelegate.swift */,
+				113D86041B883B1F009A5E94 /* ViewController.swift */,
+				113D86061B883B1F009A5E94 /* Main.storyboard */,
+				113D86091B883B1F009A5E94 /* Images.xcassets */,
+				113D860B1B883B1F009A5E94 /* LaunchScreen.xib */,
+				113D86001B883B1F009A5E94 /* Supporting Files */,
+			);
+			path = LocMemo;
+			sourceTree = "<group>";
+		};
+		113D86001B883B1F009A5E94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				113D86011B883B1F009A5E94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		113D86151B883B1F009A5E94 /* LocMemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				113D86181B883B1F009A5E94 /* LocMemoTests.swift */,
+				113D86161B883B1F009A5E94 /* Supporting Files */,
+			);
+			path = LocMemoTests;
+			sourceTree = "<group>";
+		};
+		113D86161B883B1F009A5E94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				113D86171B883B1F009A5E94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		113D85FC1B883B1F009A5E94 /* LocMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113D861C1B883B1F009A5E94 /* Build configuration list for PBXNativeTarget "LocMemo" */;
+			buildPhases = (
+				113D85F91B883B1F009A5E94 /* Sources */,
+				113D85FA1B883B1F009A5E94 /* Frameworks */,
+				113D85FB1B883B1F009A5E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocMemo;
+			productName = LocMemo;
+			productReference = 113D85FD1B883B1F009A5E94 /* LocMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		113D86111B883B1F009A5E94 /* LocMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113D861F1B883B1F009A5E94 /* Build configuration list for PBXNativeTarget "LocMemoTests" */;
+			buildPhases = (
+				113D860E1B883B1F009A5E94 /* Sources */,
+				113D860F1B883B1F009A5E94 /* Frameworks */,
+				113D86101B883B1F009A5E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				113D86141B883B1F009A5E94 /* PBXTargetDependency */,
+			);
+			name = LocMemoTests;
+			productName = LocMemoTests;
+			productReference = 113D86121B883B1F009A5E94 /* LocMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		113D85F51B883B1F009A5E94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Enkhjargal Gansukh";
+				TargetAttributes = {
+					113D85FC1B883B1F009A5E94 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					113D86111B883B1F009A5E94 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 113D85FC1B883B1F009A5E94;
+					};
+				};
+			};
+			buildConfigurationList = 113D85F81B883B1F009A5E94 /* Build configuration list for PBXProject "LocMemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 113D85F41B883B1F009A5E94;
+			productRefGroup = 113D85FE1B883B1F009A5E94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				113D85FC1B883B1F009A5E94 /* LocMemo */,
+				113D86111B883B1F009A5E94 /* LocMemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		113D85FB1B883B1F009A5E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113D86081B883B1F009A5E94 /* Main.storyboard in Resources */,
+				113D860D1B883B1F009A5E94 /* LaunchScreen.xib in Resources */,
+				113D860A1B883B1F009A5E94 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113D86101B883B1F009A5E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		113D85F91B883B1F009A5E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113D86051B883B1F009A5E94 /* ViewController.swift in Sources */,
+				113D86031B883B1F009A5E94 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113D860E1B883B1F009A5E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113D86191B883B1F009A5E94 /* LocMemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		113D86141B883B1F009A5E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 113D85FC1B883B1F009A5E94 /* LocMemo */;
+			targetProxy = 113D86131B883B1F009A5E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		113D86061B883B1F009A5E94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				113D86071B883B1F009A5E94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		113D860B1B883B1F009A5E94 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				113D860C1B883B1F009A5E94 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		113D861A1B883B1F009A5E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		113D861B1B883B1F009A5E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		113D861D1B883B1F009A5E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		113D861E1B883B1F009A5E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		113D86201B883B1F009A5E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LocMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocMemo.app/LocMemo";
+			};
+			name = Debug;
+		};
+		113D86211B883B1F009A5E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LocMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocMemo.app/LocMemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		113D85F81B883B1F009A5E94 /* Build configuration list for PBXProject "LocMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113D861A1B883B1F009A5E94 /* Debug */,
+				113D861B1B883B1F009A5E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		113D861C1B883B1F009A5E94 /* Build configuration list for PBXNativeTarget "LocMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113D861D1B883B1F009A5E94 /* Debug */,
+				113D861E1B883B1F009A5E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		113D861F1B883B1F009A5E94 /* Build configuration list for PBXNativeTarget "LocMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113D86201B883B1F009A5E94 /* Debug */,
+				113D86211B883B1F009A5E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 113D85F51B883B1F009A5E94 /* Project object */;
+}
