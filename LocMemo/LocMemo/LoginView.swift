@@ -25,7 +25,8 @@ class LoginView: UIViewController {
 //                go to MainView
                 let mainView:MainView = self.storyboard!.instantiateViewControllerWithIdentifier("MainView") as! MainView
                 self.presentViewController(mainView, animated: true, completion: nil)
-                
+                self.emailTextfield.text = ""
+                self.passwordTextfield.text = ""
             }else{
 //                show failed alert
             }

@@ -17,7 +17,13 @@ class ForgotPassView: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     
     @IBAction func sendClicked(sender: AnyObject) {
-        
-        
+        LoginService.sharedInstance.forgotPass(emailTextfield.text){
+            res in
+            if(res == true){
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }else{
+//               error alert
+            }
+        }
     }
 }

@@ -41,6 +41,7 @@ class LoginService {
             error, authData in
             if error != nil {
                 // an error occured while attempting login
+                println(error)
                 completionHandler(res: false)
             } else {
                 // user is logged in, check authData for data
@@ -68,5 +69,18 @@ class LoginService {
         let ref = Firebase(url: Constants.DbUrl)
         ref.unauth()
         completionHandler(res: true)
+    }
+    
+    func forgotPass(email: String, completionHandler:(res:Bool)->()){
+        let ref = Firebase(url: Constants.DbUrl)
+        ref.resetPasswordForUser(email, withCompletionBlock: { error in
+            if error != nil {
+                // There was an error processing the request
+                completionHandler(res: false)
+            } else {
+                // Password reset sent successfully
+                completionHandler(res: true)
+            }
+        })
     }
 }

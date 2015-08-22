@@ -28,6 +28,9 @@ class RegisterView: UIViewController {
                     if(res == true){
                         let loginView:LoginView = self.storyboard!.instantiateViewControllerWithIdentifier("LoginView") as! LoginView
                         self.presentViewController(loginView, animated: true, completion: nil)
+                        self.emailTextfield.text = ""
+                        self.passTextfield.text = ""
+                        self.repassTextfield.text = ""
                     }else{
 //                        show alert error msg
                     }
