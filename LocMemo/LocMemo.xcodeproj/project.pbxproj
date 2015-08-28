@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110D6BB71B900C61009B8AFF /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110D6BB61B900C61009B8AFF /* GeoFire.framework */; };
 		113D86031B883B1F009A5E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86021B883B1F009A5E94 /* AppDelegate.swift */; };
 		113D86051B883B1F009A5E94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86041B883B1F009A5E94 /* MainView.swift */; };
 		113D86081B883B1F009A5E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113D86061B883B1F009A5E94 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110D6BB61B900C61009B8AFF /* GeoFire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoFire.framework; sourceTree = "<group>"; };
+		110D6BB91B900FEA009B8AFF /* LocMemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocMemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		113D85FD1B883B1F009A5E94 /* LocMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113D86011B883B1F009A5E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113D86021B883B1F009A5E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 			files = (
 				113D864D1B88649E009A5E94 /* SystemConfiguration.framework in Frameworks */,
 				113D864F1B88651A009A5E94 /* Firebase.framework in Frameworks */,
+				110D6BB71B900C61009B8AFF /* GeoFire.framework in Frameworks */,
 				113D864B1B886495009A5E94 /* Security.framework in Frameworks */,
 				113D86491B88648A009A5E94 /* CFNetwork.framework in Frameworks */,
 				113D86471B886483009A5E94 /* libc++.dylib in Frameworks */,
@@ -93,6 +97,7 @@
 		113D85F41B883B1F009A5E94 = {
 			isa = PBXGroup;
 			children = (
+				110D6BB91B900FEA009B8AFF /* LocMemo-Bridging-Header.h */,
 				113D86411B88641A009A5E94 /* SDKs */,
 				113D85FF1B883B1F009A5E94 /* LocMemo */,
 				113D86151B883B1F009A5E94 /* LocMemoTests */,
@@ -151,6 +156,7 @@
 		113D86411B88641A009A5E94 /* SDKs */ = {
 			isa = PBXGroup;
 			children = (
+				110D6BB61B900C61009B8AFF /* GeoFire.framework */,
 				113D864C1B88649E009A5E94 /* SystemConfiguration.framework */,
 				113D864A1B886495009A5E94 /* Security.framework */,
 				113D86481B88648A009A5E94 /* CFNetwork.framework */,
@@ -434,8 +440,10 @@
 					"$(PROJECT_DIR)/LocMemo/SDKs",
 				);
 				INFOPLIST_FILE = LocMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocMemo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -449,8 +457,10 @@
 					"$(PROJECT_DIR)/LocMemo/SDKs",
 				);
 				INFOPLIST_FILE = LocMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocMemo-Bridging-Header.h";
 			};
 			name = Release;
 		};

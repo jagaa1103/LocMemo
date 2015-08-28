@@ -11,20 +11,13 @@ import CoreLocation
 
 class MainView: UIViewController, CLLocationManagerDelegate {
 
-    var locationManager: CLLocationManager = CLLocationManager()
-    var startLocation: CLLocation!
+
     
     @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
-        startLocation = nil
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,22 +34,17 @@ class MainView: UIViewController, CLLocationManagerDelegate {
         }
     }
     @IBAction func startLocationClicked(sender: AnyObject) {
-        locationManager.startUpdatingLocation()
+        LocationService.sharedInstance.startService()
+        LocationService.sharedInstance.locationManager.startUpdatingLocation()
     }
     
     @IBAction func stopLocationClicked(sender: AnyObject) {
-        locationManager.stopUpdatingLocation()
+        LocationService.sharedInstance.locationManager.stopUpdatingLocation()
     }
 
     @IBAction func sendClicked(sender: AnyObject) {
         DbService.sharedInstance.saveData(textField.text)
     }
 
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        var latestLocation: AnyObject = locations[locations.count - 1]
-        var lat = latestLocation.coordinate.latitude as Double
-        var lon = latestLocation.coordinate.longitude as Double
-        DbService.sharedInstance.saveLocation(lat, lon: lon)
-    }
 }
 

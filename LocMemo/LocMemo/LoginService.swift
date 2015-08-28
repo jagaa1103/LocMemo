@@ -45,6 +45,7 @@ class LoginService {
                 completionHandler(res: false)
             } else {
                 // user is logged in, check authData for data
+                println(authData)
                 completionHandler(res: true)
             }
         }
