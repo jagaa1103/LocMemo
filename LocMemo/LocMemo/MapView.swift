@@ -35,7 +35,7 @@ class MapView: UIViewController {
             longitude: lon
         )
         
-        var span = MKCoordinateSpanMake(0.5, 0.5)
+        var span = MKCoordinateSpanMake(0.02 , 0.02)
         var region = MKCoordinateRegion(center: location, span: span)
         if(mapField != nil){
             mapField.setRegion(region, animated: true)

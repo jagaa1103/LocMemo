@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "LocMemo.MapView.changeMapLocation (LocMemo.MapView)(ObjectiveC.NSNotification) -&gt; ():MapView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mapField">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
