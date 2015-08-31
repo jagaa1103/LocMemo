@@ -25,6 +25,12 @@ class MainView: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func mapClicked(sender: AnyObject) {
+        let mapView:MapView = self.storyboard!.instantiateViewControllerWithIdentifier("MapView") as! MapView
+        self.presentViewController(mapView, animated: true, completion: nil)
+
+    }
+    
     @IBAction func logoutClicked(sender: AnyObject) {
         LoginService.sharedInstance.logoutUser(){
             res in

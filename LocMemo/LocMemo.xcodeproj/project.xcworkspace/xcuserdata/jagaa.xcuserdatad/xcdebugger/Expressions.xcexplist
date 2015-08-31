@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LocMemo.MapView.changeMapLocation (LocMemo.MapView)(Swift.Double, lon : Swift.Double) -&gt; ():MapView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mapField">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

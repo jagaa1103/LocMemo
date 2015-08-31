@@ -75,6 +75,15 @@
                                     <action selector="sendClicked:" destination="j6O-ws-OkQ" eventType="touchUpInside" id="BL6-vk-3AI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6j-Me-rUB">
+                                <rect key="frame" x="137" y="417" width="31" height="30"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapClicked:" destination="j6O-ws-OkQ" eventType="touchUpInside" id="bcH-Sb-rjH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -85,6 +94,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30C-ET-53y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="559" y="659"/>
+        </scene>
+        <!--Map View-->
+        <scene sceneID="FbC-ls-aHM">
+            <objects>
+                <viewController storyboardIdentifier="MapView" id="idV-4Z-Nup" customClass="MapView" customModule="LocMemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M5J-Ac-3xM"/>
+                        <viewControllerLayoutGuide type="bottom" id="imS-YJ-ybX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V1R-HW-pJZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MhW-VY-92Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="MhW-VY-92Y" secondAttribute="centerY" constant="1" id="ZRx-Ej-GLv"/>
+                            <constraint firstAttribute="centerX" secondItem="MhW-VY-92Y" secondAttribute="centerX" constant="1" id="xNm-Vj-s2C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapField" destination="MhW-VY-92Y" id="QFU-Px-c4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjV-bE-r3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="657"/>
         </scene>
         <!--Register View-->
         <scene sceneID="yOu-I3-LqB">

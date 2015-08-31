@@ -14,6 +14,8 @@ class LocationService: NSObject, CLLocationManagerDelegate{
 
     var locationManager: CLLocationManager = CLLocationManager()
     var startLocation: CLLocation!
+    var lat: Double?
+    var lon: Double?
     
     class var sharedInstance: LocationService {
         struct Static {
@@ -35,10 +37,10 @@ class LocationService: NSObject, CLLocationManagerDelegate{
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var latestLocation: AnyObject = locations[locations.count - 1]
-        var lat = latestLocation.coordinate.latitude as Double
-        var lon = latestLocation.coordinate.longitude as Double
-        DbService.sharedInstance.saveLocation(lat, lon: lon)
+        lat = locationManager.location.coordinate.latitude
+        lon = locationManager.location.coordinate.longitude
+        var location = ["lat":"\(lat!)", "lon": "\(lon!)"]
+        NSNotificationCenter.defaultCenter().postNotificationName("locationChanged", object: location, userInfo:nil)
+//        DbService.sharedInstance.saveLocation(lat, lon: lon)
     }
-
-    
 }
