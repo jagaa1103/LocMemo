@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Start View-->
@@ -13,14 +14,14 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149.33333333333334" y="234.77333333333334"/>
+            <point key="canvasLocation" x="280" y="248"/>
         </scene>
         <!--Main View-->
         <scene sceneID="w47-5M-yyN">
@@ -31,7 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BJu-RX-4Sv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KJu-fg-Lrr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-sM-HUO">
@@ -39,6 +40,9 @@
                                 <state key="normal" title="logout">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="300" y="40" width="44" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="logoutClicked:" destination="j6O-ws-OkQ" eventType="touchUpInside" id="c60-bz-Bwf"/>
                                 </connections>
@@ -47,12 +51,18 @@
                                 <rect key="frame" x="16" y="231" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="56" y="231" width="288" height="30"/>
+                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrm-zs-Zeb">
                                 <rect key="frame" x="16" y="135" width="95" height="30"/>
                                 <state key="normal" title="start Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="56" y="135" width="95" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="startLocationClicked:" destination="j6O-ws-OkQ" eventType="touchUpInside" id="KOs-sq-2br"/>
                                 </connections>
@@ -62,6 +72,9 @@
                                 <state key="normal" title="stop Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="250" y="135" width="94" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="stopLocationClicked:" destination="j6O-ws-OkQ" eventType="touchUpInside" id="X0c-xD-gGp"/>
                                 </connections>
@@ -71,6 +84,9 @@
                                 <state key="normal" title="send">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="310" y="269" width="34" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="sendClicked:" destination="j6O-ws-OkQ" eventType="touchUpInside" id="BL6-vk-3AI"/>
                                 </connections>
@@ -80,6 +96,9 @@
                                 <state key="normal" title="Map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="185" y="417" width="31" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="mapClicked:" destination="j6O-ws-OkQ" eventType="touchUpInside" id="bcH-Sb-rjH"/>
                                 </connections>
@@ -93,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30C-ET-53y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="659"/>
+            <point key="canvasLocation" x="990" y="693.75"/>
         </scene>
         <!--Map View-->
         <scene sceneID="FbC-ls-aHM">
@@ -104,18 +123,34 @@
                         <viewControllerLayoutGuide type="bottom" id="imS-YJ-ybX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V1R-HW-pJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MhW-VY-92Y">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhW-VY-92Y">
+                                <rect key="frame" x="0.0" y="0.0" width="605" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MhW-VY-92Y" secondAttribute="height" multiplier="1:2" id="3zg-r9-kLI"/>
+                                    <constraint firstAttribute="width" constant="400" id="QAC-Ha-z8m"/>
+                                    <constraint firstAttribute="height" constant="800" id="mAW-ft-IOn"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3zg-r9-kLI"/>
+                                        <exclude reference="QAC-Ha-z8m"/>
+                                        <exclude reference="mAW-ft-IOn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <mask key="constraints">
+                                        <include reference="3zg-r9-kLI"/>
+                                        <include reference="QAC-Ha-z8m"/>
+                                        <include reference="mAW-ft-IOn"/>
+                                    </mask>
+                                </variation>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="MhW-VY-92Y" secondAttribute="centerY" constant="1" id="ZRx-Ej-GLv"/>
-                            <constraint firstAttribute="centerX" secondItem="MhW-VY-92Y" secondAttribute="centerX" constant="1" id="xNm-Vj-s2C"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapField" destination="MhW-VY-92Y" id="QFU-Px-c4K"/>
@@ -123,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjV-bE-r3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="911" y="657"/>
+            <point key="canvasLocation" x="1707" y="693.75"/>
         </scene>
         <!--Register View-->
         <scene sceneID="yOu-I3-LqB">
@@ -134,7 +169,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CT7-R8-HyA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Zy-YU-RBw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6Z-lQ-bEB">
@@ -178,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9N-kF-t3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="1"/>
+            <point key="canvasLocation" x="1700.625" y="1.056338028169014"/>
         </scene>
         <!--Forgot Pass View-->
         <scene sceneID="TNv-mk-td1">
@@ -189,7 +224,7 @@
                         <viewControllerLayoutGuide type="bottom" id="P6D-vP-KmD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qtr-RW-ejG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMW-Ko-zCA">
@@ -215,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryk-2E-ySf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1249" y="-1"/>
+            <point key="canvasLocation" x="2341.875" y="-1.056338028169014"/>
         </scene>
         <!--Login View-->
         <scene sceneID="TVO-U5-AQy">
@@ -226,7 +261,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dpu-gS-mJM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="X7F-9b-DYU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK3-Pq-epY">
@@ -282,12 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7d-az-Bi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557" y="1"/>
+            <point key="canvasLocation" x="1044.375" y="1.056338028169014"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

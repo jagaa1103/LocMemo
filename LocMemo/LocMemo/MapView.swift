@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MapKit
 
-class MapView: UIViewController {
+class MapView: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self,selector: Selector("changeMapLocation:"),
@@ -35,16 +35,25 @@ class MapView: UIViewController {
             longitude: lon
         )
         
-        var span = MKCoordinateSpanMake(0.02 , 0.02)
+        var span = MKCoordinateSpanMake(0.05 , 0.05)
         var region = MKCoordinateRegion(center: location, span: span)
         if(mapField != nil){
             mapField.setRegion(region, animated: true)
-            annotation.coordinate = location
-            annotation.title = "Roatan"
-            annotation.subtitle = "Honduras"
-            
-            mapField.addAnnotation(annotation)
+//            annotation.coordinate = location
+//            annotation.title = "Position"
+//            annotation.subtitle = "Your Current Position"
+//            
+//            mapField.addAnnotation(annotation)
         }
     }
-    
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        if  (annotation != nil) {
+            let identifier = "pin"
+            let annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView
+            annotationView!.image = UIImage(named: "pin13.png")
+            annotationView?.canShowCallout
+            return annotationView
+        }
+        return nil
+    }
 }

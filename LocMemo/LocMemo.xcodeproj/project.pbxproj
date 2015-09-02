@@ -29,6 +29,7 @@
 		113D86601B886C1D009A5E94 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D865F1B886C1D009A5E94 /* StartView.swift */; };
 		113D86621B887907009A5E94 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113D86611B887907009A5E94 /* LocationService.swift */; };
 		11B54D041B9407D0009C36DE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B54D031B9407D0009C36DE /* MapView.swift */; };
+		11BB4FB71B96BA09007974B0 /* pin13.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BB4FB61B96BA09007974B0 /* pin13.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		113D865F1B886C1D009A5E94 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		113D86611B887907009A5E94 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		11B54D031B9407D0009C36DE /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		11BB4FB61B96BA09007974B0 /* pin13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin13.png; path = images/pin13.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		113D85FF1B883B1F009A5E94 /* LocMemo */ = {
 			isa = PBXGroup;
 			children = (
+				11BB4FB51B96B9CD007974B0 /* images */,
 				113D86581B886601009A5E94 /* Services */,
 				113D86521B886558009A5E94 /* Views */,
 				113D86021B883B1F009A5E94 /* AppDelegate.swift */,
@@ -199,6 +202,14 @@
 				113D86611B887907009A5E94 /* LocationService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		11BB4FB51B96B9CD007974B0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				11BB4FB61B96BA09007974B0 /* pin13.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 				113D86081B883B1F009A5E94 /* Main.storyboard in Resources */,
 				113D860D1B883B1F009A5E94 /* LaunchScreen.xib in Resources */,
 				113D860A1B883B1F009A5E94 /* Images.xcassets in Resources */,
+				11BB4FB71B96BA09007974B0 /* pin13.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
